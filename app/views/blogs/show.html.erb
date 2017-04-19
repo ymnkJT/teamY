@@ -1,5 +1,11 @@
 <p id="notice"><%= notice %></p>
 
+<% user = User.find(@blog.user_id) %>
+<p>
+ <strong>ユーザー名:</strong>
+ <%= user.name %>
+</p>
+
 <p>
   <strong>Title:</strong>
   <%= @blog.title %>
